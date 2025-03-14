@@ -1,0 +1,36 @@
+.navbar {
+	background-color: #eee;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	padding: 20px 0 16px;
+
+	&__item {
+		position: relative;
+		text-decoration: none;
+		color: #000;
+		font-size: 1.1rem;
+		line-height: 1.5;
+		outline: 0;
+		border-bottom: 1px solid #000;
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			background-color: red;
+			width: 0;
+			height: 1px;
+			transition: width 300ms ease-in;
+		}
+
+		&:hover {
+			color: red;
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}

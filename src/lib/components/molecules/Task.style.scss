@@ -1,0 +1,15 @@
+article {
+	border-bottom: 1px solid #e6e6e6;
+	box-sizing: border-box;
+
+	span {
+		font-size: 12px;
+		opacity: 0.5;
+	}
+
+	p {
+		text-wrap: wrap;
+		word-wrap: break-word;
+		max-width: 500px;
+	}
+}
